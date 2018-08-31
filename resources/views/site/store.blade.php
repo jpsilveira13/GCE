@@ -3,9 +3,9 @@
     @include('site.contents.header')
 @endsection
 @section('content')
-    <section>
-        teste
-    </section>
-
+   <!-- include da parte do site sobre -->
+    @include('site.includes.sobre')
+   <!-- include da parte do site portfolio -->
+    @include('site.includes.portfolio')
 
 @endsection

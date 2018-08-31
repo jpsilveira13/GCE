@@ -1,5 +1,5 @@
 /*
-
+Author: João Paulo da Silveira :D
 cores site : #9e0829 vermelho
 fonte titulo : #2d2d2d cinza
 
@@ -8,5 +8,156 @@ fonts site
 MontSerrat
 
  */
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #2d2d2d;
+}
+.bg-branco{
+    background-color: #fff;
+    border-radius: 5px;
 
+}
+.fontTitulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    color: #2d2d2d;
+}
+.fontSub{
+    font-weight: bold;
+    font-size: 26px;
+}
+
+/* css sobre */
+
+
+.mt-temp-20{
+    margin-top: 100px;
+}
+
+
+.fontTituloSobre{
+    color: #fff;
+    margin-bottom: 98px;
+}
+#sobre{
+    background-color: #9e0829;
+}
+
+
+#sobre-texto .container{
+    max-width: 725px;
+}
+
+#sobre-texto p{
+    font-size: 20px;
+}
+
+/*
+
+fim css sobre
+
+ */
+
+/*
+
+inicio css portfolio
+
+ */
+
+#portfolio{
+    background-image: url(../img/bg-portfolio.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    min-height: 674px;
+    height: 100%;
+    position: relative;
+}
+
+
+
+
+
+#portfolio .bg-branco{
+    padding: 78px;
+    margin-top: 63px;
+}
+#portfolio .left-col h1{
+    margin-bottom: 20px;
+}
+#portfolio .left-col p{
+    padding-right: 59px;
+}
+
+#portfolio .right-col h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+#portfolio .right-col h3:first-child{
+    margin-top: 33px;
+}
+
+/* media queries */
+@media only screen and (max-width: 928px) {
+    /* media css porfolio */
+    #portfolio .left-col h1{
+        font-size: 3rem;
+    }
+    #portfolio .bg-branco{
+        padding: 48px;
+    }
+    #portfolio .left-col p{
+        padding-right: 24px;
+        font-size: .9rem;
+    }
+
+    /* fim media css porfolio */
+}
+@media only screen and (max-width: 425px) {
+    /* media css sobre nos */
+
+    #sobre .img-fluid{
+        width: 50%;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+    .fontTituloSobre{
+        margin-bottom: 28px;
+        font-size: 3.4rem;
+    }
+
+    #sobre-texto p{
+        font-size: 1rem;
+    }
+    #portfolio .left-col p{
+        padding-right: 0;
+        font-size: 1rem;
+    }
+
+    /* fim media css sobre nos */
+
+    /* media css porfolio */
+
+    #portfolio .bg-branco{
+        margin-top: 0;
+    }
+
+    #portfolio .right-col h3{
+        font-size: 1.1rem;
+
+        border-bottom: 1px solid #c29898;
+        padding-bottom: 10px;
+    }
+
+    #portfolio .container{
+        width: 90%;
+    }
+
+    /* fim media css porfolio */
+}
 
