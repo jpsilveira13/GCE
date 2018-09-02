@@ -7,5 +7,6 @@
     @include('site.includes.sobre')
    <!-- include da parte do site portfolio -->
     @include('site.includes.portfolio')
-
+   <!-- include da parte do site cliente -->
+   @include('site.includes.clientes')
 @endsection

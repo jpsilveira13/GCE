@@ -2,7 +2,7 @@
 Author: João Paulo da Silveira :D
 cores site : #9e0829 vermelho
 fonte titulo : #2d2d2d cinza
-
+bg cinza: #f4f4f4 cinza claro
 fonts site
 
 MontSerrat
@@ -17,10 +17,15 @@ body{
     border-radius: 5px;
 
 }
+
+.bg-cinza{
+    background-color: #f4f4f4;
+}
 .fontTitulo{
     font-family: 'Montserrat', sans-serif;
-    font-size: 4rem;
+    font-size: 3.8rem;
     color: #2d2d2d;
+    line-height: 63px;
 }
 .fontSub{
     font-weight: bold;
@@ -39,7 +44,7 @@ body{
     color: #fff;
     margin-bottom: 98px;
 }
-#sobre{
+#sobre,#clientes{
     background-color: #9e0829;
 }
 
@@ -76,8 +81,6 @@ inicio css portfolio
 
 
 
-
-
 #portfolio .bg-branco{
     padding: 78px;
     margin-top: 63px;
@@ -99,6 +102,113 @@ inicio css portfolio
     margin-top: 33px;
 }
 
+.section-porfolio-geral{
+    position: relative;
+    padding: 3rem 0;
+}
+.box-imagem .img-fluid{
+    max-width: 90%;
+}
+
+.leia-mais{
+    margin-top: 44px;
+}
+.leia-mais span{
+    color: #8cc6db;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.bg-cinza .box-texto{
+    padding: 32px;
+}
+.bg-cinza .no-padding{
+    padding: 0;
+}
+.box-texto{
+    margin-top: 12px;
+}
+
+.box-texto p:first-child{
+    margin-top: 2rem;
+}
+
+.bg-cinza .box-imagem .img-fluid{
+    max-width: 100%;
+}
+
+
+/*
+
+fim css cliente
+
+ */
+
+/*
+/*
+
+inicio css cliente
+
+ */
+
+#clientes{
+    color: #fff;
+    padding: 5rem 0;
+    position: relative;
+}
+
+#clientes h1{
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.box-texto-cliente p{
+    max-width: 520px;
+    font-size: 20px;
+    margin-bottom: 5rem;
+}
+.owl-carousel .owl-dots {
+    display: block!important;
+    bottom: -12px!important;
+}
+
+.owl-nav{
+    display: none;
+}
+#clientes .owl-carousel .owl-dots{
+    bottom: -54px!important;
+}
+#clientes .mb-20{
+    margin-bottom: 20px;
+}
+.owl-carousel .owl-dots {
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 3;
+    display: none;
+}
+
+.owl-carousel .owl-dots .owl-dot.active {
+    opacity: 1;
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+.owl-carousel .owl-dots .owl-dot {
+    width: 14px;
+    height: 15px;
+    opacity: .5;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 50%;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    background: #fff;
+}
+
 /* media queries */
 @media only screen and (max-width: 928px) {
     /* media css porfolio */
@@ -113,7 +223,22 @@ inicio css portfolio
         font-size: .9rem;
     }
 
+    .box-imagem .img-fluid {
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .box-texto h1{
+        font-size: 3rem;
+    }
+
+    .box-imagem{
+        margin-bottom: 36px;
+    }
     /* fim media css porfolio */
+
 }
 @media only screen and (max-width: 425px) {
     /* media css sobre nos */
@@ -157,7 +282,24 @@ inicio css portfolio
     #portfolio .container{
         width: 90%;
     }
+    .box-imagem{
+        margin-bottom: 0;
+    }
+    .box-imagem .img-fluid {
+        max-width: 100%;
+    }
+
+
 
     /* fim media css porfolio */
 }
 
+@media only screen and (max-width: 390px) {
+    .box-texto h1 {
+        font-size: 2.4rem;
+        line-height: 40px;
+    }
+    .bg-cinza .box-texto{
+        padding: 0;
+    }
+}

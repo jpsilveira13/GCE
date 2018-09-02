@@ -12,6 +12,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset('site/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('site/css/owl.carousel.min.css')}}" rel="stylesheet">
+
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Custom fonts for this template -->
     <script src="https://use.fontawesome.com/9a93b47e91.js"></script>
@@ -49,7 +51,7 @@
 <!-- Plugin JavaScript -->
 <script src="{{asset('site/js/jquery.easing.min.js')}}"></script>
 <script src="{{asset('site/js/jquery.magnific-popup.min.js')}}"></script>
-
+<script src="{{asset('site/js/owl.carousel.min.js')}}"></script>
 
 
 <!-- Custom scripts for this template -->
