@@ -9,4 +9,10 @@
     @include('site.includes.portfolio')
    <!-- include da parte do site cliente -->
    @include('site.includes.clientes')
+   <!-- include da parte do site contato -->
+   @include('site.includes.contato')
+
+    <!-- include footer -->
+   @include('site.contents.footer')
+
 @endsection

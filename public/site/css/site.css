@@ -32,6 +32,19 @@ body{
     font-size: 26px;
 }
 
+/* form formulario geral */
+.form-geral input, .form-geral textarea{
+    background-color: #eeeeee;
+    border-color: #eeeeee;
+}
+
+.form-geral .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #9E0829;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158,8,41,.25);
+}
 /* css sobre */
 
 
@@ -44,7 +57,7 @@ body{
     color: #fff;
     margin-bottom: 98px;
 }
-#sobre,#clientes{
+#sobre,#clientes,#footer{
     background-color: #9e0829;
 }
 
@@ -209,6 +222,51 @@ inicio css cliente
     background: #fff;
 }
 
+
+/*
+
+fim css cliente
+
+ */
+
+/*
+
+
+/*
+
+inicio css contato
+
+ */
+.area-form-texto h1{
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    line-height: 71px;
+}
+
+.area-form-texto p, .area-form-texto span{
+    font-size: 20px;
+}
+
+.area-form-texto{
+    padding: 30px 30px 30px 30px;
+}
+
+/*
+
+fim css contato
+
+ */
+
+/*
+
+inicio css footer
+
+ */
+
+#footer{
+    color: #fff;
+}
+
 /* media queries */
 @media only screen and (max-width: 928px) {
     /* media css porfolio */
@@ -237,7 +295,24 @@ inicio css cliente
     .box-imagem{
         margin-bottom: 36px;
     }
+
+
+
     /* fim media css porfolio */
+
+    /*  media css contato */
+    .area-form-texto{
+        padding: 0;
+    }
+    .area-form-texto h1{
+        font-size: 3.8rem;
+        margin-top: 28px;
+        margin-bottom: 0;
+    }
+    .area-form-texto p, .area-form-texto span{
+        font-size: 1.2rem;
+    }
+    /* fim media css contato */
 
 }
 @media only screen and (max-width: 425px) {
@@ -289,9 +364,27 @@ inicio css cliente
         max-width: 100%;
     }
 
-
-
     /* fim media css porfolio */
+
+    /*  media css contato */
+    .area-form-texto h1{
+        margin-top: 0;
+        line-height: 60px;
+    }
+
+    .area-form-texto p, .area-form-texto span{
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+
+    #contato .row{
+        flex-wrap: wrap-reverse;
+    }
+    .area-form-texto {
+        margin-bottom: 21px;
+    }
+
+    /* fim media css contato */
 }
 
 @media only screen and (max-width: 390px) {
