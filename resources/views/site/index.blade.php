@@ -65,6 +65,7 @@
 @yield('site-js')
 
 <script src="{{asset('site/js/menu.js')}}"></script>
+<!--
 <div id="menu">
     <a href="#" class="close"></a>
     <ul>
@@ -72,7 +73,7 @@
         <li> <a href="{{route('logout')}}">Logout</a> </li>
     </ul>
 </div>
-
+-->
 <script>
     $('.close').on('click',function (e) {
         e.preventDefault();

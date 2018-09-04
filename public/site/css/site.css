@@ -267,6 +267,32 @@ inicio css footer
     color: #fff;
 }
 
+.logo-rodape img{
+    margin-right: 113px;
+}
+#footer .list-inline-item:not(:last-child) {
+    margin-right: 1.9rem;
+}
+.nav-rodape{
+    margin-top: 8px;
+}
+.nav-rodape li a{
+    color: #fff;
+    font-size: 23px;
+}
+#footer .container{
+    max-width: 800px;
+}
+.container-rodape{
+    padding: 75px 0;
+    max-width: 700px;
+}
+.footer-final p{
+    font-size: 14px;
+    color: #9e0829;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
 /* media queries */
 @media only screen and (max-width: 928px) {
     /* media css porfolio */
@@ -385,6 +411,28 @@ inicio css footer
     }
 
     /* fim media css contato */
+
+    /* media css footer */
+    .container-rodape{
+        padding: 29px 0;
+    }
+    .logo-rodape img{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .nav-rodape li a {
+
+        font-size: 1.4rem;
+    }
+    #footer .list-inline-item:not(:last-child) {
+        margin-right: 0.5rem;
+    }
+    #footer .list-inline{
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 390px) {
@@ -394,5 +442,8 @@ inicio css footer
     }
     .bg-cinza .box-texto{
         padding: 0;
+    }
+    .nav-rodape li a {
+        font-size: 1.2rem;
     }
 }
