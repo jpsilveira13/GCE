@@ -555,6 +555,10 @@ inicio css footer
     display: none;
 }
 
+#clientes .owl-nav{
+    display: none!important;
+}
+
 /* media queries */
 
 @media only screen and (max-width: 1024px) {
@@ -597,7 +601,7 @@ inicio css footer
         z-index: 20;
         margin-top: 2px;
         position: relative;
-       
+
     }
     .hide-res{
         display: none;

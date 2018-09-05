@@ -3,7 +3,14 @@
 <nav class="navbar navbar-expand-lg fixed-top text-uppercase" id="mainNav">
 
     <div  id="selectionaIdioma" class="hide-res seleciona-idioma">
-        <img class="img-fluid" src="{{url('site/img/brazil.svg')}}" />
+        <img class="img-fluid"
+             @if(empty(Session::get('locale')))
+             src="{{url('site/img/brazil.svg')}}" />
+        @elseif(Session::get('locale') == "en")
+            src="{{url('site/img/united-states.svg')}}" />
+        @else
+            src="{{url('site/img/brazil.svg')}}" />
+        @endif
     </div>
 
     <div class="container">
@@ -15,20 +22,27 @@
             <ul class="navbar-nav ml-auto">
 
                 <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#">Empresa</a>
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#">{{__('header.Empresa')}}</a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#">Portfólio</a>
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#">{{__('header.Portfolio')}}</a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#">Clientes</a>
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#">{{__('header.Clientes')}}</a>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#">Contato</a>
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#">{{__('header.Contato')}}</a>
                 </li>
                 <li>
                     <div  id="selectionaIdioma" class="seleciona-idioma hide-no-res">
-                        <img class="img-fluid" src="{{url('site/img/brazil.svg')}}" />
+                        <img class="img-fluid"
+                             @if(empty(Session::get('locale')))
+                             src="{{url('site/img/brazil.svg')}}" />
+                        @elseif(Session::get('locale') == "en")
+                            src="{{url('site/img/united-states.svg')}}" />
+                        @else
+                            src="{{url('site/img/brazil.svg')}}" />
+                        @endif
                     </div>
                 </li>
 

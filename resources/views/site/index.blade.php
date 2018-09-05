@@ -5,14 +5,16 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Empresa do ramo da construção civil, vasta experiência em construção de moradia, expertise na construção de obras públicas. Qualidade atestada pelas principais certificações no setor.">
+    <meta name="author" content="JpS :D">
+    <meta name="keywords" content="construção civil, construção, obras públicas, moradia, gce, construtora">
 
-    <title>Mundo Gamer Token</title>
+    <title>GCE</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset('site/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('site/css/owl.carousel.min.css')}}" rel="stylesheet">
+
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Custom fonts for this template -->
@@ -26,7 +28,6 @@
 
     @yield('site-css')
     <link href="{{asset('site/css/site.css')}}" rel="stylesheet" />
-    <link href="{{asset('site/css/menu.css')}}" rel="stylesheet" />
     <link rel="shortcut icon" type="image/png" href="{{url('site/img/favicon.ico')}}" />
 
 </head>

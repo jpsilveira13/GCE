@@ -120,10 +120,33 @@ $('.seleciona-idioma').click(function () {
 });
 
 
-$('.flexslider').flexslider({
-    animation: "slide",
-    controlNav: false
+
+
+$('.languageSelect').on('click',function (e) {
+    e.preventDefault();
+    var locale = $(this).data('value');
+    $.ajax({
+        url: '/language',
+        type:'POST',
+        headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+        data:{locale:locale,
+            "_token": $('#token').val()
+        },
+        dataType: 'json',
+        success:function (data) {
+            console.log(data)
+        },
+        error:function (data) {
+            console.log(data)
+        },
+        complete:function (data) {
+
+            window.location.reload(true);
+        }
+    });
+
 });
+
 
 
 
