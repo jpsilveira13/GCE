@@ -3,6 +3,8 @@
     @include('site.contents.header')
 @endsection
 @section('content')
+    <!-- include da parte do site sobre -->
+    @include('site.includes.slider')
    <!-- include da parte do site sobre -->
     @include('site.includes.sobre')
    <!-- include da parte do site portfolio -->

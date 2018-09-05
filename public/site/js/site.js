@@ -27,6 +27,30 @@ $('.languageSelect').on('click',function (e) {
     });
 
 });
+$('.owl-slider').owlCarousel({
+
+
+    autoplay: 3000,
+    navigation: true,
+    addClassActive: true,
+    loop:true,
+    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+    transitionStyle: "fade",
+    dots:false,
+
+    responsive:{
+        0:{
+            items:1,
+
+        },
+        600:{
+            items:1,
+        },
+        1024:{
+            items:1,
+        }
+    }
+});
 $('.owl-carousel').owlCarousel({
 
     nav:true,
@@ -51,6 +75,8 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+
+
 
 
 
@@ -87,6 +113,16 @@ $('#newsLetterSubmit').submit(function (e) {
             )
         }
     });
+});
+
+$('.seleciona-idioma').click(function () {
+    $(".menu-selecao-idioma").css('display','block');
+});
+
+
+$('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: false
 });
 
 

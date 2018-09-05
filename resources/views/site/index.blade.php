@@ -53,7 +53,6 @@
 <script src="{{asset('site/js/jquery.magnific-popup.min.js')}}"></script>
 <script src="{{asset('site/js/owl.carousel.min.js')}}"></script>
 
-
 <!-- Custom scripts for this template -->
 
 <script src="{{asset('site/js/cge.min.js')}}"></script>

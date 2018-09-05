@@ -11,6 +11,7 @@ MontSerrat
 body{
     font-family: 'Open Sans', sans-serif;
     color: #2d2d2d;
+    padding-top: 125px;
 }
 .bg-branco{
     background-color: #fff;
@@ -45,12 +46,268 @@ body{
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(158,8,41,.25);
 }
-/* css sobre */
-
-
-.mt-temp-20{
-    margin-top: 100px;
+/* css header */
+.navbar-brand img{
+    margin-bottom: 10px;
 }
+    /* css menu nav */
+#mainNav{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    background-color: #fff;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link {
+    color: #9e0829;
+    text-transform: none;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link:hover{
+    border-bottom: 1px solid #9e0829;
+    transition: .1s;
+    color: #9e0829;
+}
+
+.menu-selecao-idioma {
+     display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    right: 0px;
+    top: 0px;
+    z-index: 99999;
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+
+.menu-selecao-idioma>div {
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    z-index: 99999;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    /* display: none; */
+    float: left;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.menu-selecao-idioma>div>div {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    float: left;
+    width: 100%;
+}
+
+.languageSelect  > h3:last-child {
+    position: relative;
+    width: 80%;
+    float: left;
+    left: 0px;
+    top: 0px;
+    color: white;
+    padding: 5%;
+    text-align: right;
+    margin: 0px;
+    font-size: 15px;
+}
+
+.languageSelect{
+    cursor: pointer;
+}
+
+.languageSelect:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.menu-selecao-idioma .languageSelect h3:first-child {
+    position: relative;
+    width: 20%;
+    float: left;
+    left: 0px;
+    top: 0px;
+    color: white;
+    padding: 5%;
+    text-align: center;
+    margin: 0px;
+    font-size: 20px;
+}
+
+
+
+.seleciona-idioma{
+    position: absolute;
+    right: 24px;
+
+}
+
+.seleciona-idioma img{
+    width: 43px;
+    height: 26px;
+    cursor: pointer;
+}
+
+
+/* fim css header */
+
+/* css slider */
+
+.area-slider{
+    height: 860px;
+    position: relative;
+
+    transition: height .5s;
+}
+
+.bg-image-slider{
+    position: relative;
+    height: 660px;
+    background-position: 100% 0px;
+    background-size: cover;
+}
+.owl-nav{
+    display: block!important;
+}
+.owl-prev, .owl-next {
+    display: inline-block;
+    position: absolute;
+    top: -25%;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    font-size: 60px;
+    line-height: 60px;
+
+    color: #FFF;
+
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: auto;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+    opacity: 1;
+}
+.owl-prev:hover, .owl-next:hover{
+    color: #9e0829;
+}
+.owl-prev {
+    left: 50px;
+}
+
+.owl-next {
+    right: 50px;
+}
+
+
+.area-slider .item  {
+    position: relative;
+    height: 860px;
+
+}
+.item .meta {
+    position: absolute;
+    bottom: -139px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #2d2d2d;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: block;
+    text-align: center;
+}
+
+.flexslider li h1 {
+    background: rgba(51, 51, 51, 0.5);
+    padding: 12px 18px 12px;
+    margin-bottom: 0;
+    font-size: 1.8em;
+    font-weight: 300;
+}
+
+
+.item .meta h1{
+    -webkit-animation-duration: .6s;
+    animation-duration: .6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeOutLeft;
+    animation-name: fadeOutLeft;
+    font-size: 4rem;
+}
+
+.area-slider .owl-item.active .meta h1{
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
+    -webkit-animation-duration: .6s;
+    animation-duration: .6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes fadeOutLeft {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes fadeOutLeft {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+
+
+
+/* css sobre */
 
 
 .fontTituloSobre{
@@ -293,8 +550,96 @@ inicio css footer
     margin-top: 36px;
     margin-bottom: 36px;
 }
+
+.hide-no-res{
+    display: none;
+}
+
 /* media queries */
+
+@media only screen and (max-width: 1024px) {
+    /* css header */
+    #mainNav .navbar-nav {
+        margin-right: 53px;
+    }
+    .bg-image-slider{
+        height: 433px;
+    }
+    .area-slider,.area-slider .item{
+        height: 585px;
+    }
+    .item .meta {
+        bottom: -114px;
+    }
+    .item .meta h1{
+        font-size: 3rem;
+    }
+    .owl-next {
+        right: 16px;
+    }
+}
 @media only screen and (max-width: 928px) {
+    /* css header */
+
+    .item .meta {
+        bottom: -107px;
+    }
+    #mainNav .navbar-nav {
+        margin-right: 0;
+    }
+    #mainNav .bg-primary{
+        background-color: #9e0829!important;
+    }
+    .navbar-brand img{
+        margin-bottom: 0;
+    }
+    #mainNav .navbar-toggler {
+        z-index: 20;
+        margin-top: 2px;
+        position: relative;
+       
+    }
+    .hide-res{
+        display: none;
+    }
+
+    .hide-no-res{
+        display: block;
+    }
+
+    .seleciona-idioma {
+
+        position: relative;
+        right: 0;
+        margin: auto;
+    }
+    .seleciona-idioma img {
+        width: 52px;
+        height: 73px;
+
+        margin-top: 5px;
+    }
+
+
+
+    body{
+        padding-top: 90px;
+    }
+    /* css slider  */
+
+    .item .meta h1 {
+        font-size: 2.3rem;
+    }
+
+    .area-slider, .area-slider .item {
+        height: 549px;
+    }
+
+    .item .meta {
+        bottom: -90px;
+    }
+
+
     /* media css porfolio */
     #portfolio .left-col h1{
         font-size: 3rem;
@@ -340,8 +685,31 @@ inicio css footer
     }
     /* fim media css contato */
 
+
+
+
+
 }
 @media only screen and (max-width: 425px) {
+
+    /* css header */
+
+    .seleciona-idioma {
+
+        position: relative;
+        right: 0;
+        margin: auto;
+    }
+    #mainNav .navbar-toggler{
+        right: 0;
+    }
+
+    .navbar-brand img{
+        width: 118px;
+    }
+
+
+
     /* media css sobre nos */
 
     #sobre .img-fluid{
@@ -351,6 +719,13 @@ inicio css footer
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 10px;
+    }
+    .owl-nav{
+        display:none!important;
+    }
+
+    .item .meta {
+        bottom: -107px;
     }
     .fontTituloSobre{
         margin-bottom: 28px;

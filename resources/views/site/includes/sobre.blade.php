@@ -1,4 +1,4 @@
-<section id="sobre" class="section-all mt-temp-20">
+<section id="sobre" class="section-all">
     <div class="container">
         <div class="text-center">
             <h1 class="fontTitulo fontTituloSobre">Sobre Nós</h1>
